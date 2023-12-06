@@ -1,0 +1,237 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;
+    font-size: 16px;
+    margin: 0;
+    background-color: #FDF7E4;
+}
+
+:root{
+    --bg: blue;
+    --text: red;
+    --heading-color: pink;
+
+}
+
+
+.flex{
+    display: flex; 
+}
+
+main.flexy{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+
+nav{
+    background-color: rgb(60, 42, 33, 1);
+    color: #E5E5CB;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+nav > *{
+    list-style: none;
+    gap: 2em;
+    padding: 3rem;
+    margin: 0;
+}
+
+nav > ul{
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    font-size: x-large;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: #E5E5CB;
+    
+}
+
+nav > ul > li > a:hover{
+    color: white;
+    text-shadow: -1px -1px 5px #E5E5CB, 1px 1px 5px #E5E5CB;
+
+}
+
+
+/* Hero Banner */
+
+section.hero{
+    background: radial-gradient(at right center, rgb(56, 189, 248), rgb(49, 46, 129));
+    height: 50rem;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.hero-left{
+    width: 300px;
+    height: auto;
+    background-color: transparent;
+
+}
+
+div.image-container{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    animation: bordersss 10s linear infinite;
+    box-shadow: 0px 0px 10px 10px rgba( 31, 38, 135, 0.37 );
+}
+
+div.image-container img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-position: center bottom;
+}    
+                          
+@keyframes bordersss {
+    0%{
+        border-radius: 39% 61% 45% 55% / 47% 56% 44% 53%;
+    }
+    20%{
+        border-radius: 64% 36% 56% 44% / 42% 64% 36% 58% ;
+    }
+    40%{
+        border-radius: 43% 57% 70% 30% / 52% 51% 49% 48% ;
+    }
+    60%{
+        border-radius: 68% 32% 44% 56% / 54% 57% 43% 46% ; 
+    }
+    80%{
+        border-radius: 58% 42% 52% 48% / 66% 58% 42% 34%; 
+    }
+    100%{
+        border-radius: 39% 61% 45% 55% / 47% 56% 44% 53%;
+    }
+    
+}
+
+
+div.hero-right{
+    width: 300px;
+    height: auto;
+}
+
+div.glass-container{
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    z-index: 0;
+}
+
+
+/* Triple Card */
+
+section.hobbies{
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+div.triple{
+    display: flex;
+}
+
+div.triple > div.content {
+    width: 30%;
+    height: 30svh;
+    background-color: #000;
+    margin: 10px auto;
+    color: aqua;
+    position: relative;
+}
+ 
+div.triple > div.content > div.cover{
+    position: absolute;
+    top: 0;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 300ms;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+div.triple > div.content:hover div.cover{
+    position: absolute; 
+    top: -15vh;
+    background-color: red;
+    width: 100%;
+    height: 50%;
+}
+
+div.triple > div.content > p {
+    padding: 10px 20px;
+}
+
+section > div.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #555555;
+}
+
+div.contact-me > input{
+   border: none;
+   background-color: transparent;
+    line-height: 2rem;
+    width: 30rem;
+   border-bottom: 1px solid white;
+   box-shadow: none;
+   outline: none;
+    text-align: center;
+}
+
+div.contact-me > button{
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+    background-position: 0 0;
+    transition: all ease-in-out ;
+}
+
+div.contact-me > button:hover{
+    background: linear-gradient(to bottom right, red, blue, red, blue);
+    animation: gradient-bg 3s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient-bg {
+    10%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%;
+         
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+
+
