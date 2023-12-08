@@ -3,7 +3,7 @@ body{
     line-height: normal;
     font-size: 16px;
     margin: 0;
-    background-color: #FDF7E4;
+    background-color: #ffffff;
 }
 
 :root{
@@ -234,4 +234,20 @@ div.contact-me > button:hover{
 }
 
 
+
+div.container{
+    background: linear-gradient(to bottom right, red, blue, red, blue);
+    height: 50rem;
+    position: relative;
+    font-size: larger;
+}
+
+div.top > svg{
+    position: absolute;
+    top: 0;
+}
+div.bottom > svg{
+    position: absolute;
+    bottom: 0;
+}
 
