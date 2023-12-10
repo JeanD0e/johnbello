@@ -6,6 +6,8 @@ body{
     background-color: #ffffff;
 }
 
+
+
 :root{
     --bg: blue;
     --text: red;
@@ -16,6 +18,15 @@ body{
 
 .flex{
     display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 main.flexy{
@@ -45,6 +56,7 @@ nav > ul{
     flex: 1 0 auto;
     justify-content: flex-end;
     font-size: x-large;
+    
 }
 
 nav > ul > li > a{
@@ -72,20 +84,14 @@ section.hero{
     align-items: center;
 }
 
-div.hero-left{
+/* div.hero-left{
     width: 300px;
     height: auto;
     background-color: transparent;
 
-}
+} */
 
-div.image-container{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    animation: bordersss 10s linear infinite;
-    box-shadow: 0px 0px 10px 10px rgba( 31, 38, 135, 0.37 );
-}
+
 
 div.image-container img{
     object-fit: cover;
@@ -116,11 +122,11 @@ div.image-container img{
     
 }
 
-
+/* 
 div.hero-right{
     width: 300px;
     height: auto;
-}
+} */
 
 div.glass-container{
     background: rgba( 255, 255, 255, 0.4 );
@@ -251,3 +257,84 @@ div.bottom > svg{
     bottom: 0;
 }
 
+
+.contact-info{ 
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    background-color:aliceblue;
+}
+
+.contact-info > *{
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+}
+
+.contact-info > ul{
+    list-style: none;
+    list-style-type: none;
+    gap: 2rem;
+    margin: 0;
+}
+
+
+.contact-info span{
+    display: block;
+}
+
+
+
+.hero { 
+    width: 100vw;
+    height: 80svh;
+    
+}
+
+.hero > *{ 
+    width: 600px;
+    height: auto;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.image-container{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    animation: bordersss 10s linear infinite;
+    box-shadow: 0px 0px 10px 10px rgba( 31, 38, 135, 0.37 );
+    margin: auto;
+}
+
+.glass-container > span >  *{ 
+    display: inline-block;
+}
+
+.glass-container > span { 
+    display: block;
+    font-size: x-large;
+}
+
+.glass-container {
+    box-sizing: border-box;
+    padding: 2rem 2rem;
+    text-align: left;
+    position: relative;
+}
+
+.btn{ 
+    background-color: blue;
+    padding: 1rem 1rem;
+    color: aqua;
+    width: 120px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+.contact-icons > li > a > svg{
+    width: 35px;
+    height: 35px;
+}
