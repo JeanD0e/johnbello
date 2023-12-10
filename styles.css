@@ -258,29 +258,6 @@ div.bottom > svg{
 }
 
 
-.contact-info{ 
-    text-align: center;
-    width: 100vw;
-    height: auto;
-    background-color:aliceblue;
-}
-
-.contact-info > *{
-    box-sizing: border-box;
-    padding: 3rem 1rem;
-}
-
-.contact-info > ul{
-    list-style: none;
-    list-style-type: none;
-    gap: 2rem;
-    margin: 0;
-}
-
-
-.contact-info span{
-    display: block;
-}
 
 
 
@@ -333,6 +310,35 @@ div.bottom > svg{
     font-weight: bolder;
     box-sizing: border-box;
 }
+
+
+/* footer css */
+
+
+.contact-info{ 
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    background-color:aliceblue;
+}
+
+.contact-info > *{
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+}
+
+.contact-info > ul{
+    list-style: none;
+    list-style-type: none;
+    gap: 2rem;
+    margin: 0;
+}
+
+
+.contact-info span{
+    display: block;
+}
+
 
 .contact-icons > li > a > svg{
     width: 35px;
