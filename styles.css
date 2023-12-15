@@ -15,14 +15,7 @@ font-family: 'Roboto', sans-serif;
  */
 
 :root{
-    --bg-color-main: #03001C;
-    --bg-color-sub1: #301E67;
-    --bg-color-sub2: #5B8FB9;
-    --bg-color-sub3: #B6EADA;
-    --heading-text: 5rem;
-    --subtext: 3rem;
-    --bg-gradient: linear-gradient(to left top, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
-    --bg-gradient2: linear-gradient(135deg, #0c134f, #1D267D, #5C469C);
+    --bg-gradient: linear-gradient(135deg, #0c134f, #1D267D, #5C469C);
 }
 
 main{
@@ -30,17 +23,29 @@ main{
     flex-flow: column;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1{
     font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+  h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 }
 
 span{
     font-family: 'Kalnia', serif;
-    font-size: 2em;
+    font-size: 3.5rem;
 }
 
 p, li{
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
 }
 
 
@@ -107,7 +112,7 @@ nav ul li:hover{
 .gradient-bg{
     position: absolute;
     inset: 0;
-    background: var(--bg-gradient2);
+    background: var(--bg-gradient);
     background-size: 300%;
     width: 100vw;
     min-height: 100%;
@@ -264,12 +269,10 @@ nav ul li:hover{
     background-color:#ECF4D6;
     box-sizing: border-box;
     padding: 10rem 2rem 0.5rem 2rem;
-    font-size: 2rem;
 }
 
 .contact-info p{
     display: block;
-    font-size: 1rem;
     margin: 0 0 0 auto;
     width: max-content;
 }
@@ -346,7 +349,6 @@ nav ul li:hover{
 
   .first-container, .third-container{
     justify-content: flex-end;
-    align-items: center;
   }
 
   .first-container::before{
@@ -394,7 +396,7 @@ nav ul li:hover{
     flex-flow: column wrap;
     display: flex;
     margin: 0 3.5rem 0 auto;
-    width: 190px;
+    width: 200px;
   }
 
   .skills-content-left{
@@ -414,11 +416,6 @@ nav ul li:hover{
     padding: 2.5px;
   }
 
-.footer{
-    background-color: black;
-    color: #B6EADA;
-
-}
 
 @media only screen and (max-width: 600px) {
 
@@ -436,7 +433,7 @@ nav ul li:hover{
 
   span{
       font-family: 'Kalnia', serif;
-      font-size: 1.5em;
+      font-size: 1.25em;
   }
 
 }
