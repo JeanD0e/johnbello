@@ -200,19 +200,14 @@ nav ul li:hover{
     align-items: center;
 }
 
+.left-column h1{
+    height: 7.5rem;
+}
+
 .right-column{
     align-items: center;
 }
 
-.right-column p, .right-column h2{
-    
-    width: 500px;
-    text-align: justify;
-}
-
-.right-column > a{ 
-    text-decoration: none;
-}
 
 
 #typewriter{
@@ -241,60 +236,18 @@ nav ul li:hover{
 
 }
 
-.wave-separator img{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    z-index: 10;
+
+.right-column p, .right-column h2{
+    
+    width: 500px;
+    text-align: justify;
+}
+
+.right-column > a{ 
+    text-decoration: none;
 }
 
 
-
-.wave-separator2 img{
-    transform: rotate(180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-}
-
-.contact-info{ 
-    position: relative;
-    text-align: center;
-    width: 100vw;
-    height: auto;
-    background-color:#ECF4D6;
-    box-sizing: border-box;
-    padding: 10rem 2rem 0.5rem 2rem;
-}
-
-.contact-info p{
-    display: block;
-    margin: 0 0 0 auto;
-    width: max-content;
-}
-
-.contact-info > ul{
-    list-style: none;
-    list-style-type: none;
-    gap: 2rem;
-    padding: 1.5rem 0;
-}
-
-
-.contact-icons > li > a > img{
-    width: 50px;
-    height: 50px;
-}
-
-.contact-icons > li:hover{
-    transform: scale(1.2);
-    transition: all 0.5s ease;
-
-}
 
 .button {
     background-color: #03001C;
@@ -324,6 +277,16 @@ nav ul li:hover{
     transform: translateY(0px);
     filter: drop-shadow(0px 1px 1px rgba(221, 221, 221, 0.5));
   }
+
+
+.wave-separator img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
 
 
 
@@ -395,7 +358,7 @@ nav ul li:hover{
   .skills-content{
     flex-flow: column wrap;
     display: flex;
-    margin: 0 3.5rem 0 auto;
+    margin: 0 2.5rem 0 auto;
     width: 200px;
   }
 
@@ -417,6 +380,54 @@ nav ul li:hover{
   }
 
 
+  
+.wave-separator2 img{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.contact-info{ 
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    background-color:#ECF4D6;
+    box-sizing: border-box;
+    padding: 10rem 2rem 0.5rem 2rem;
+}
+
+.contact-info p{
+    display: block;
+    margin: 0 0 0 auto;
+    width: max-content;
+}
+
+.contact-info > ul{
+    list-style: none;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+
+.contact-icons > li > a > img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact-icons > li:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+
+}
+
+
+
 @media only screen and (max-width: 600px) {
 
 
@@ -427,6 +438,8 @@ nav ul li:hover{
     
         width: 100%;
     }
+
+    
   }
 
   @media only screen and (max-width: 440px) {
@@ -435,12 +448,11 @@ nav ul li:hover{
       font-family: 'Kalnia', serif;
       font-size: 1.25em;
   }
+  .skills-content{
+    margin: 0 auto 0 2.5rem;
+  }
 
 }
 
  
 
-
-.left-column h1{
-    height: 7.5em;
-}
