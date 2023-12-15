@@ -429,13 +429,20 @@ nav ul li:hover{
     
         width: 100%;
     }
-    span{
-        font-family: 'Kalnia', serif;
-        font-size: 1.5em;
-    }
   }
 
+  @media only screen and (max-width: 440px) {
 
-  .left-column h1{
+  span{
+      font-family: 'Kalnia', serif;
+      font-size: 1.5em;
+  }
+  
+}
+
+ 
+
+
+.left-column h1{
     height: 7.5em;
 }
