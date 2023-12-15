@@ -5,44 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon/code.svg" type="image/x-icon">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <meta name="description" content="Showcasing my skills in web development">
+
 </head>
 
 <body>
-    <main class="flexy">
+    <main>
+        <nav>
+            <div class="logo">
+                <img src="favicon/code.svg" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#nav-home">Home</a></li>
+                <li><a href="#nav-skills">Skills</a></li>
+                <li><a href="#nav-contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <!-- <section class="navigation">
-            <nav class="flex-nowrap">
-                <div class="nav-logo"><svg xmlns="http://www.w3.org/2000/svg" height="32" width="24"
-                        viewBox="0 0 384 512">!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-                        <!-- <path
-                            d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zM257 255c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z" />
-                    </svg></div>
-                <ul class="flex-nowrap">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#contact-info">Contact</a></li>
-                </ul>
-            </nav>
-        </section> --> 
-
-        <section class="hero-banner">
+        <section class="hero-banner" id="nav-home">
             <div class="gradient-bg"></div>
             <div class="wrapper">
             
-                <div class="hero-image-container">
-                    <img src="images/coffee.png" alt="no image">
-                </div>
+                <!-- <div class="hero-image-container">
+                    <img src="images/profile_pic.png" alt="no image">
+                </div> -->
             
             
                 <div class="glass-container">
-                    <h2>Hi, I am John.</h2>
-                    <h1>A <span class="typewriter-text">Web Developer</span></h1>
-                        <a class="bn60" href="mailto:johndotbello@gmail.com">CONTACT ME</a>
+                    <h1 style="white-space: pre">Are you looking for a <br><span id="typewriter"></span></h1>
+                    <h2>My name is John and I love creating websites.</h2>
+                    <p>I have experience in HTML, CSS, JavaScript and more. I can help you with your web development needs, whether it's a personal project or a business website.</p>
+    
+                    <a class="button" href="mailto:johndotbello@gmail.com">CONTACT ME</a>
                 </div>
             </div>
                 
@@ -51,10 +50,52 @@
                 <img src="assets/wave.svg" alt="wave border">
             </div>
          </section>
-        <section class="contact-info">
-            <div class="section-header">
-                <span>You can also reach me at any of the following:</span>
+
+        <section class="skills" id="nav-skills">
+            <h1 class="clip">SKILLS</h1>
+            <div class="first-container">
+                <div class="skills-content">
+                <h3>Web Development</h3>
+                <ul class="lists">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Tailwind</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
             </div>
+            </div>
+            <div class="second-container ">
+                <div class="skills-content-left">
+                <h3>Shopify</h3>
+                <ul class="lists">
+                    <li>Shopify theme development and customization</li>
+                    <li>Liquid templating language knowledge</li>
+                    <li>Shopify app integration and configuration</li>
+                    <li>Responsive web design and cross-browser compatibility</li>
+                    <li>E-commerce functionality and security</li>
+                </ul>
+            </div>
+            </div>
+            <div class="third-container">
+                <div class="skills-content">
+                <h3>SEO</h3>
+                <ul class="lists">
+                    <li>Keyword research</li>
+                    <li>Content creation</li>
+                    <li>Technical SEO</li>
+                    <li>On-page SEO</li>
+                    <li>Analytics and reporting</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section class="contact-info" id="nav-contact">
+            <div class="wave-separator2">
+                <img src="assets/wave.svg" alt="wave border">
+            </div>
+            <h6>You can also reach me at any of the following:</h6>
         
             <ul class="flex contact-icons">
                 <li> 
@@ -79,66 +120,14 @@
                 </a>
             </li>
             </ul>
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
         </section>
-        <!-- <section class="hobbies">
-            <div class="section-header">
-                <span>Aside from coding, here are the things I love:</span>
-            </div>
-            <div class="cards">
-                <div class="wrapper">
-                    <div class="image-container">
-                        <img src="images/activity.png" alt="no-image">
-                    </div>
-                    <div class="first-card">
-                        <div class="content">
-                            <div class="cover">Activities</div>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repudiandae, qui odit
-                                eaque debitis quisquam aspernatur consequatur voluptatibus similique dolor deleniti
-                                adipisci nisi numquam nulla dolorem facilis illo totam libero?</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="image-container">
-                        <img src="/images/coffee2.jpeg" alt="no-image">
-                    </div>
-                    <div class="second-card">
-                        
-                        <div class="content">
-                            <div class="cover">Food</div>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolores accusamus nam
-                                corrupti
-                                architecto hic maiores dolor officiis, corporis deleniti cum vero saepe numquam
-                                repellendus
-                                impedit eos. Nostrum, cum? Placeat.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="image-container">
-                        <img src="/images/coffee2.jpeg" alt="no-image">
-                    </div>
-                    <div class="third-card">
-                        
-                        <div class="content">
-                            <div class="cover">Games</div>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam provident labore
-                                reprehenderit quasi consequatur laborum, cum impedit, quas sapiente dicta fuga iure
-                                voluptatum adipisci eveniet magnam, facilis modi corrupti laboriosam!</span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
     </main>
+
 </body>
 
 
-<footer >
 
-</footer>
 
 <script src="script.js"></script>
 
