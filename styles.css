@@ -92,7 +92,7 @@ nav ul li:hover{
     background-color: black;
     & a{
         color: white;
-        text-shadow: -0.5px 0.5px white;
+        text-shadow: 0px 0px 2px 2px white;
     }
 }
 
@@ -129,7 +129,7 @@ nav ul li:hover{
     width: 100vw;
     height: auto;
     box-sizing: border-box;
-    padding: 7.5rem 2rem 10rem 2rem;
+    padding: 7.5rem 1rem 10rem 1rem;
 }
 
 /* .hero-image-container{
@@ -178,18 +178,34 @@ nav ul li:hover{
 .glass-container{
     display: flex;
     flex-flow: column wrap;
-    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
     text-shadow: 1px 1px #072541;
-    width: 100%;
-    min-width: 40%;
 }
 
 .glass-container > *{
     flex: 1 1 auto;
 }
 
-.glass-container > a{ 
+.left-column{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column{
+    align-items: center;
+}
+
+.right-column p, .right-column h2{
+    
+    width: 500px;
+    text-align: justify;
+}
+
+.right-column > a{ 
     text-decoration: none;
 }
 
@@ -323,10 +339,14 @@ nav ul li:hover{
 
   .first-container, .second-container, .third-container{
     width: 100%;
-    height: 35vh;
     position: relative;
     box-sizing: border-box;
-    padding: 1rem 0;
+    padding: 2rem 0;
+  }
+
+  .first-container, .third-container{
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .first-container::before{
@@ -373,19 +393,24 @@ nav ul li:hover{
   .skills-content{
     flex-flow: column wrap;
     display: flex;
-    margin: 0 2rem 0 auto;
+    margin: 0 3.5rem 0 auto;
   }
 
   .skills-content-left{
     flex-flow: column wrap;
-    display: flex;
-    margin: 0 auto 0 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto 0 2.5rem;
   }
 
   .lists{ 
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  .lists li{
+    padding: 2.5px;
   }
 
 .footer{
@@ -396,18 +421,21 @@ nav ul li:hover{
 
 @media only screen and (max-width: 600px) {
 
-    .skills-content {
-        margin: 0;
-      }
-      .skills > *  {
-        justify-content: center;
-      }
+
       .contact-info p{
         margin: auto;
       }
+      .right-column p, .right-column h2{
+    
+        width: 100%;
+    }
+    span{
+        font-family: 'Kalnia', serif;
+        font-size: 1.5em;
+    }
   }
 
 
-  .glass-container h1{
+  .left-column h1{
     height: 7.5em;
 }
