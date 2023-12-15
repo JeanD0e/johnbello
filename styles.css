@@ -394,6 +394,7 @@ nav ul li:hover{
     flex-flow: column wrap;
     display: flex;
     margin: 0 3.5rem 0 auto;
+    width: 190px;
   }
 
   .skills-content-left{
@@ -437,7 +438,7 @@ nav ul li:hover{
       font-family: 'Kalnia', serif;
       font-size: 1.5em;
   }
-  
+
 }
 
  
