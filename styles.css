@@ -45,7 +45,7 @@ span{
 
 p, li{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 
@@ -298,7 +298,7 @@ nav ul li:hover{
     background-color: #FF8C32;
     overflow: hidden;
     isolation: isolate;
-    color: #EEEEEE;
+    color: #ffffff;
     
   }
 
